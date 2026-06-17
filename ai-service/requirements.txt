@@ -1,0 +1,30 @@
+# ClearView AI Service - Python Dependencies
+# These are all FREE and open-source libraries!
+
+# Flask - Lightweight web framework for our API
+flask==3.0.0
+
+# Flask-CORS - Allow frontend to connect to our API
+flask-cors==4.0.0
+
+# MediaPipe legacy "solutions" API used by this codebase.
+# On Windows, Python 3.11 is the safest setup for this stack.
+mediapipe==0.10.14
+
+# Keep NumPy below 2.x for legacy MediaPipe compatibility.
+numpy<2
+
+# MediaPipe installs cv2 via opencv-contrib-python, so a separate
+# opencv-python dependency is intentionally not listed here.
+
+# Microsoft runtime libraries help MediaPipe load on Windows
+msvc-runtime; platform_system == "Windows"
+
+# Pillow - Image handling library
+pillow>=10.0.0
+
+# Gunicorn - Production server (for deployment)
+gunicorn>=21.0.0
+
+# Python-dotenv - Load environment variables
+python-dotenv==1.0.0

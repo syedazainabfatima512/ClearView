@@ -1,0 +1,22 @@
+# ClearView Backend
+
+## Dependencies (node_modules)
+node_modules/
+
+## Environment files (contains secrets!)
+.env
+
+## Logs
+*.log
+npm-debug.log*
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## IDE
+.idea/
+.vscode/
+
+## Uploads (if storing files locally)
+uploads/

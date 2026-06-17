@@ -1,0 +1,51 @@
+.story-illustration {
+    position: relative;
+    width: min(100%, 26rem);
+    min-height: 20rem;
+    justify-self: end;
+    border-radius: 30px;
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
+        rgba(12, 18, 24, 0.72);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+.story-illustration::before,
+.story-illustration::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.story-illustration::before {
+    width: 12rem;
+    height: 12rem;
+    right: -3.5rem;
+    top: -3.5rem;
+    background: radial-gradient(circle, rgba(102, 208, 195, 0.16), transparent 70%);
+}
+
+.story-illustration::after {
+    width: 10rem;
+    height: 10rem;
+    left: -2.5rem;
+    bottom: -3rem;
+    background: radial-gradient(circle, rgba(224, 171, 99, 0.14), transparent 70%);
+}
+
+.story-illustration svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.story-illustration-dashboard {
+    width: min(100%, 24rem);
+}
+
+.story-illustration-results {
+    width: min(100%, 25rem);
+}

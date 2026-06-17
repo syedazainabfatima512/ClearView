@@ -1,0 +1,30 @@
+# ClearView AI Service - Python/MediaPipe
+
+## Dependencies and virtual environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+## Environment files (contains secrets!)
+.env
+
+## Temporary files
+.tmp/
+
+## IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Logs
+*.log

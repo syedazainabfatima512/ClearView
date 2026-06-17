@@ -1,0 +1,344 @@
+.dashboard-page {
+    padding-top: 7.5rem;
+    padding-bottom: var(--spacing-16);
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 24rem);
+    gap: var(--spacing-8);
+    align-items: end;
+    margin-bottom: var(--spacing-10);
+}
+
+.dashboard-header-copy {
+    max-width: 44rem;
+}
+
+.dashboard-title {
+    margin: var(--spacing-3) 0;
+}
+
+.dashboard-subtitle {
+    font-size: var(--font-size-lg);
+    max-width: 38rem;
+}
+
+.dashboard-header-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-4);
+}
+
+.dashboard-header-visual {
+    justify-self: end;
+}
+
+.dashboard-header-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--spacing-3);
+}
+
+.dashboard-note {
+    max-width: 18rem;
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+    text-align: right;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--spacing-5);
+    margin-bottom: var(--spacing-10);
+}
+
+.stat-card,
+.dashboard-section,
+.tip-card {
+    background: var(--gradient-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.stat-card {
+    padding: var(--spacing-5);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.stat-icon {
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    color: var(--accent-300);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    flex-shrink: 0;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.stat-label {
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.stat-value {
+    color: var(--text-primary);
+    font-size: 1.9rem;
+    font-weight: 800;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.95fr);
+    gap: var(--spacing-6);
+}
+
+.dashboard-section {
+    padding: var(--spacing-6);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: var(--spacing-4);
+    margin-bottom: var(--spacing-5);
+}
+
+.section-title {
+    font-family: var(--font-family-display);
+    font-size: 2rem;
+    margin-top: var(--spacing-2);
+}
+
+.section-caption {
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+    text-align: right;
+}
+
+.empty-state {
+    border: 1px dashed rgba(255, 255, 255, 0.09);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-8);
+    display: grid;
+    gap: var(--spacing-4);
+    justify-items: start;
+}
+
+.empty-state p {
+    color: var(--text-secondary);
+}
+
+.interview-list,
+.resume-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+}
+
+.interview-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4) var(--spacing-4);
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-lg);
+    color: inherit;
+    text-align: left;
+    transition: border-color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
+}
+
+.interview-item:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(94, 196, 183, 0.25);
+}
+
+.interview-info,
+.resume-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    min-width: 0;
+}
+
+.interview-domain,
+.resume-name {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.interview-date,
+.resume-domain {
+    color: var(--text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.interview-meta {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    flex-shrink: 0;
+}
+
+.result-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.32rem 0.7rem;
+    border-radius: 999px;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.result-chip.passed {
+    background: rgba(136, 208, 166, 0.12);
+    color: var(--success-400);
+}
+
+.result-chip.failed {
+    background: rgba(239, 142, 128, 0.12);
+    color: var(--error-400);
+}
+
+.interview-score {
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+.resume-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    padding: var(--spacing-4);
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.resume-icon {
+    width: 2.85rem;
+    height: 2.85rem;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-200);
+    background: rgba(94, 196, 183, 0.12);
+    border: 1px solid rgba(94, 196, 183, 0.12);
+    flex-shrink: 0;
+}
+
+.resume-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3);
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.resume-start-btn {
+    min-width: 8.4rem;
+}
+
+.tips-section {
+    margin-top: var(--spacing-10);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--spacing-5);
+}
+
+.tip-card {
+    padding: var(--spacing-6);
+}
+
+.tip-icon {
+    width: 2.9rem;
+    height: 2.9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    margin-bottom: var(--spacing-4);
+    color: var(--accent-300);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.tip-card h3 {
+    margin-bottom: var(--spacing-2);
+}
+
+@media (max-width: 1024px) {
+    .dashboard-header,
+    .dashboard-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dashboard-header-side,
+    .dashboard-header-actions {
+        align-items: flex-start;
+    }
+
+    .dashboard-note,
+    .section-caption {
+        text-align: left;
+    }
+}
+
+@media (max-width: 640px) {
+    .dashboard-page {
+        padding-top: 6.75rem;
+    }
+
+    .dashboard-header-visual {
+        display: none;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header,
+    .interview-item,
+    .resume-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .interview-meta,
+    .resume-actions {
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0;
+    }
+}
