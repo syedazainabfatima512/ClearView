@@ -1,4 +1,5 @@
 🎯 ClearView — AI-Based Interview Preparation System
+
 ClearView is an AI-powered interview preparation system that helps students and job seekers improve their interview performance — and helps organizations hire faster with structured, unbiased, and measurable candidate evaluation.
 
 📌 Overview
